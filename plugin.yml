@@ -1,0 +1,10 @@
+name: DamageIndicator
+main: SoyJorgeh\DamageIndicator\Main
+api: 3.0.0
+version: 1.0.0
+author: SoyJorgeh
+
+commands:
+  damageindicator:
+    description: "Indica el daño que haces al atacar"
+    permission: damage.use
