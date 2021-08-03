@@ -2,21 +2,20 @@
 
 namespace SoyJorgeh\DamageIndicator;
 
-use pocketmine\command\Command;
-use pocketmine\command\CommandSender;
 use pocketmine\entity\Entity;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\math\Vector3;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\TextFormat as TE;
 
 use pocketmine\event\Listener;
 
 class Main extends PluginBase implements Listener {
 
     public function onEnable(){
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+        $this->getLogger()->info(TE::GREEN."The plugin was turned on correctly!");
 
         Entity::registerEntity(SampleEntity::class, true);
     }
