@@ -25,9 +25,9 @@ class SimpleEntity extends Human {
             if ($this->age > 20);
                 $this->flagForDespawn();
         }
-    }
 
-    return $hasUpdate;
+        return $hasUpdate;
+    }
 
 
 }
